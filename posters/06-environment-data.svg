@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" font-family="Arial, Helvetica, sans-serif">
+<title>Environmental and data solutions poster</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05140f"/><stop offset="1" stop-color="#0c3a30"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b6ff6a"/><stop offset="1" stop-color="#2fd6a0"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+<clipPath id="g"><circle cx="270" cy="310" r="160"/></clipPath>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<rect width="800" height="1000" fill="url(#grid)"/>
+<circle cx="270" cy="310" r="250" fill="url(#ac)" opacity=".10"/>
+<text x="60" y="92" font-size="34" font-weight="900" fill="#f5fbff">Eric<tspan fill="#66ffb3">.</tspan></text>
+<text x="740" y="90" text-anchor="end" font-size="18" font-weight="700" letter-spacing="3" fill="#9cc4b4">06 / DATA + EARTH</text>
+
+<!-- globe -->
+<circle cx="270" cy="310" r="160" fill="#0a2a22" stroke="url(#ac)" stroke-width="4"/>
+<g clip-path="url(#g)" fill="none" stroke="#2fd6a0" stroke-width="2" opacity=".7">
+<ellipse cx="270" cy="310" rx="60" ry="160"/><ellipse cx="270" cy="310" rx="115" ry="160"/>
+<path d="M110 310h320M124 240h292M124 380h292M270 150v320"/>
+</g>
+<g clip-path="url(#g)" fill="#b6ff6a" opacity=".85">
+<path d="M190 220c30-20 70-10 84 14 10 18-8 34-4 54 6 26 34 30 30 60-4 28-34 44-52 30-20-16-8-44-30-62-24-20-52-12-56-44-2-20 10-40 28-52z"/>
+<path d="M340 250c22-8 46 4 52 24 4 16-10 26-24 22-20-6-40-22-28-46z"/>
+</g>
+<!-- map pin -->
+<path d="M300 250c0-28 22-48 48-48s48 20 48 48c0 34-48 84-48 84s-48-50-48-84z" fill="#f5fbff"/>
+<circle cx="348" cy="250" r="18" fill="#05140f"/>
+<!-- bar chart -->
+<g>
+<rect x="500" y="380" width="44" height="90" rx="8" fill="#2fd6a0" opacity=".55"/>
+<rect x="560" y="320" width="44" height="150" rx="8" fill="#2fd6a0" opacity=".75"/>
+<rect x="620" y="250" width="44" height="220" rx="8" fill="url(#ac)"/>
+<rect x="680" y="180" width="44" height="290" rx="8" fill="#b6ff6a"/>
+<path d="M500 350l82-70 60-50 62-74" fill="none" stroke="#f5fbff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="704" cy="156" r="9" fill="#f5fbff"/>
+</g>
+
+<text x="60" y="610" font-size="88" font-weight="900" letter-spacing="-3" fill="#f5fbff">DATA FOR</text>
+<text x="60" y="700" font-size="88" font-weight="900" letter-spacing="-3" fill="#b6ff6a">THE PLANET.</text>
+
+<g font-size="24" fill="#d5ebe2">
+<rect x="60" y="754" width="14" height="14" fill="#b6ff6a"/><text x="90" y="770">GIS mapping and spatial thinking</text>
+<rect x="60" y="796" width="14" height="14" fill="#b6ff6a"/><text x="90" y="812">Excel data work and beginner Python</text>
+<rect x="60" y="838" width="14" height="14" fill="#b6ff6a"/><text x="90" y="854">Environmental research and sustainability ideas</text>
+</g>
+
+<rect y="920" width="800" height="80" fill="#030c09"/>
+<text x="60" y="968" font-size="20" font-weight="700" fill="#f5fbff">Eric Mwendwa</text>
+<text x="740" y="968" text-anchor="end" font-size="20" fill="#66ffb3">ericcatalyst5948@gmail.com</text>
+</svg>

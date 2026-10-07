@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" font-family="Arial, Helvetica, sans-serif">
+<title>Laptop optimisation and repairs poster</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#140c12"/><stop offset="1" stop-color="#3a1a1f"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#66ffb3"/><stop offset=".5" stop-color="#ffc857"/><stop offset="1" stop-color="#ff6f61"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<rect width="800" height="1000" fill="url(#grid)"/>
+<circle cx="400" cy="420" r="300" fill="#ffc857" opacity=".08"/>
+<text x="60" y="92" font-size="34" font-weight="900" fill="#f5fbff">Eric<tspan fill="#66ffb3">.</tspan></text>
+<text x="740" y="90" text-anchor="end" font-size="18" font-weight="700" letter-spacing="3" fill="#c7a9a4">04 / PERFORMANCE</text>
+
+<!-- speed gauge -->
+<path d="M180 420A220 220 0 0 1 620 420" fill="none" stroke="#2a161b" stroke-width="44" stroke-linecap="round"/>
+<path d="M180 420A220 220 0 0 1 620 420" fill="none" stroke="url(#ac)" stroke-width="30" stroke-linecap="round"/>
+<g stroke="#f5fbff" stroke-width="4" stroke-linecap="round" opacity=".7">
+<path d="M400 248v-22"/><path d="M278 298l-16-16"/><path d="M522 298l16-16"/><path d="M228 420h-22" opacity="0"/>
+</g>
+<path d="M400 420L552 300" stroke="#f5fbff" stroke-width="12" stroke-linecap="round"/>
+<circle cx="400" cy="420" r="26" fill="#f5fbff"/><circle cx="400" cy="420" r="10" fill="#140c12"/>
+<text x="160" y="470" font-size="18" font-weight="700" letter-spacing="2" fill="#c7a9a4">SLOW</text>
+<text x="640" y="470" text-anchor="end" font-size="18" font-weight="700" letter-spacing="2" fill="#ff6f61">FAST</text>
+<g font-size="18" font-weight="700" letter-spacing="2">
+<rect x="92" y="160" width="150" height="40" rx="20" fill="none" stroke="#ffc857" stroke-width="2"/><text x="167" y="186" text-anchor="middle" fill="#ffc857">DRIVERS</text>
+<rect x="558" y="160" width="150" height="40" rx="20" fill="none" stroke="#ffc857" stroke-width="2"/><text x="633" y="186" text-anchor="middle" fill="#ffc857">STORAGE</text>
+</g>
+
+<text x="60" y="610" font-size="88" font-weight="900" letter-spacing="-3" fill="#f5fbff">FASTER</text>
+<text x="60" y="700" font-size="88" font-weight="900" letter-spacing="-3" fill="#ffc857">LAPTOPS.</text>
+
+<g font-size="24" fill="#ecd9d5">
+<rect x="60" y="754" width="14" height="14" fill="#ff6f61"/><text x="90" y="770">Speed and start-up optimisation</text>
+<rect x="60" y="796" width="14" height="14" fill="#ff6f61"/><text x="90" y="812">Driver, storage and performance fixes</text>
+<rect x="60" y="838" width="14" height="14" fill="#ff6f61"/><text x="90" y="854">Fresh system set-up and software support</text>
+</g>
+
+<rect y="920" width="800" height="80" fill="#0c0609"/>
+<text x="60" y="968" font-size="20" font-weight="700" fill="#f5fbff">Eric Mwendwa</text>
+<text x="740" y="968" text-anchor="end" font-size="20" fill="#66ffb3">ericcatalyst5948@gmail.com</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" font-family="Arial, Helvetica, sans-serif">
+<title>Computer software services poster</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06131c"/><stop offset="1" stop-color="#0b3340"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#66ffb3"/><stop offset="1" stop-color="#45d9ff"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<rect width="800" height="1000" fill="url(#grid)"/>
+<circle cx="140" cy="300" r="280" fill="url(#ac)" opacity=".12"/>
+<text x="60" y="92" font-size="34" font-weight="900" fill="#f5fbff">Eric<tspan fill="#66ffb3">.</tspan></text>
+<text x="740" y="90" text-anchor="end" font-size="18" font-weight="700" letter-spacing="3" fill="#91a4b8">02 / SOFTWARE</text>
+
+<!-- stacked system tiles -->
+<g font-weight="900" font-size="30">
+<g transform="rotate(-6 230 250)">
+<rect x="80" y="150" width="300" height="190" rx="18" fill="#0b1c2e" stroke="#2a4a68" stroke-width="2"/>
+<rect x="110" y="182" width="50" height="50" rx="6" fill="#45d9ff"/><rect x="168" y="182" width="50" height="50" rx="6" fill="#45d9ff" opacity=".75"/>
+<rect x="110" y="240" width="50" height="50" rx="6" fill="#45d9ff" opacity=".75"/><rect x="168" y="240" width="50" height="50" rx="6" fill="#45d9ff" opacity=".5"/>
+<text x="240" y="222" fill="#f5fbff" font-size="24">Windows</text>
+</g>
+<g transform="rotate(5 560 240)">
+<rect x="420" y="140" width="300" height="190" rx="18" fill="#0b1c2e" stroke="#2a4a68" stroke-width="2"/>
+<rect x="448" y="170" width="244" height="96" rx="10" fill="#040b15"/>
+<text x="464" y="206" font-size="20" fill="#66ffb3" font-family="Consolas, 'Courier New', monospace">$ sudo install</text>
+<text x="464" y="240" font-size="20" fill="#91a4b8" font-family="Consolas, 'Courier New', monospace">done ✓</text>
+<text x="448" y="306" fill="#f5fbff" font-size="24">Linux</text>
+</g>
+<g transform="translate(0 34) rotate(-2 400 400)">
+<rect x="250" y="300" width="300" height="170" rx="18" fill="#10283c" stroke="#66ffb3" stroke-width="2"/>
+<text x="280" y="352" fill="#f5fbff" font-size="24">Office · macOS · Dual-boot</text>
+<rect x="280" y="384" width="240" height="18" rx="9" fill="#040b15"/>
+<rect x="280" y="384" width="240" height="18" rx="9" fill="url(#ac)"/>
+<text x="280" y="440" font-size="20" font-weight="700" fill="#66ffb3">Installed — 100%</text>
+</g>
+</g>
+
+<text x="60" y="610" font-size="88" font-weight="900" letter-spacing="-3" fill="#f5fbff">SOFTWARE</text>
+<text x="60" y="700" font-size="88" font-weight="900" letter-spacing="-3" fill="#66ffb3">DONE RIGHT.</text>
+
+<g font-size="24" fill="#c9d8e6">
+<rect x="60" y="754" width="14" height="14" fill="#45d9ff"/><text x="90" y="770">Windows, Office, Linux and macOS support</text>
+<rect x="60" y="796" width="14" height="14" fill="#45d9ff"/><text x="90" y="812">Dual-boot set-up on one machine</text>
+<rect x="60" y="838" width="14" height="14" fill="#45d9ff"/><text x="90" y="854">Software troubleshooting and fixes</text>
+</g>
+
+<rect y="920" width="800" height="80" fill="#040b15"/>
+<text x="60" y="968" font-size="20" font-weight="700" fill="#f5fbff">Eric Mwendwa</text>
+<text x="740" y="968" text-anchor="end" font-size="20" fill="#66ffb3">ericcatalyst5948@gmail.com</text>
+</svg>

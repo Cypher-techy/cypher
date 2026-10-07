@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" font-family="Arial, Helvetica, sans-serif">
+<title>Digital branding and content poster</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#150a1c"/><stop offset="1" stop-color="#0a2540"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff6fb5"/><stop offset="1" stop-color="#45d9ff"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<rect width="800" height="1000" fill="url(#grid)"/>
+<circle cx="620" cy="300" r="280" fill="url(#ac)" opacity=".14"/>
+<text x="60" y="92" font-size="34" font-weight="900" fill="#f5fbff">Eric<tspan fill="#66ffb3">.</tspan></text>
+<text x="740" y="90" text-anchor="end" font-size="18" font-weight="700" letter-spacing="3" fill="#b9a6c4">05 / CREATIVE</text>
+
+<!-- stacked artboards -->
+<g transform="rotate(-12 300 310)"><rect x="190" y="160" width="220" height="300" rx="14" fill="#ffc857"/></g>
+<g transform="rotate(8 470 310)"><rect x="380" y="160" width="220" height="300" rx="14" fill="#45d9ff"/></g>
+<rect x="290" y="140" width="220" height="320" rx="14" fill="#f5fbff"/>
+<circle cx="400" cy="240" r="62" fill="url(#ac)"/>
+<path d="M330 330l44-52 34 38 22-24 52 62H330z" fill="#150a1c" opacity=".0"/>
+<rect x="318" y="328" width="164" height="18" rx="9" fill="#150a1c"/>
+<rect x="318" y="358" width="120" height="12" rx="6" fill="#9aa8b6"/>
+<rect x="318" y="380" width="140" height="12" rx="6" fill="#9aa8b6"/>
+<rect x="318" y="412" width="84" height="28" rx="14" fill="#ff6fb5"/>
+<!-- swatches -->
+<circle cx="110" cy="250" r="26" fill="#ff6fb5"/><circle cx="110" cy="316" r="26" fill="#9b7cff"/><circle cx="110" cy="382" r="26" fill="#66ffb3"/>
+<!-- play + heart badges -->
+<circle cx="680" cy="210" r="38" fill="#150a1c" stroke="#ff6fb5" stroke-width="3"/><path d="M668 190v40l34-20z" fill="#ff6fb5"/>
+<path d="M680 440c-36-24-46-44-46-60a24 24 0 0 1 46-10 24 24 0 0 1 46 10c0 16-10 36-46 60z" fill="#66ffb3"/>
+
+<text x="60" y="610" font-size="88" font-weight="900" letter-spacing="-3" fill="#f5fbff">DESIGNS</text>
+<text x="60" y="700" font-size="88" font-weight="900" letter-spacing="-3" fill="#ff6fb5">THAT POP.</text>
+
+<g font-size="24" fill="#e6d8ee">
+<rect x="60" y="754" width="14" height="14" fill="#45d9ff"/><text x="90" y="770">Advertising posters and social graphics</text>
+<rect x="60" y="796" width="14" height="14" fill="#45d9ff"/><text x="90" y="812">YouTube and TikTok branding</text>
+<rect x="60" y="838" width="14" height="14" fill="#45d9ff"/><text x="90" y="854">AI-assisted visuals and promo content</text>
+</g>
+
+<rect y="920" width="800" height="80" fill="#0a0510"/>
+<text x="60" y="968" font-size="20" font-weight="700" fill="#f5fbff">Eric Mwendwa</text>
+<text x="740" y="968" text-anchor="end" font-size="20" fill="#66ffb3">ericcatalyst5948@gmail.com</text>
+</svg>
