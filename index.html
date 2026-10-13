@@ -83,6 +83,20 @@ section{padding:95px 0}
 .project a{display:inline-block;margin-top:18px;font-weight:800;border-bottom:2px solid currentColor}
 .project:before{content:"↗";position:absolute;right:25px;bottom:15px;font-size:5rem;line-height:1;opacity:.12}
 
+/* Project showcase */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work-card{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.work-card:hover{border-color:var(--cyan);box-shadow:0 24px 50px rgba(0,0,0,.45),0 0 30px rgba(69,217,255,.14)}
+.work-card .pop{display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.work-card .kind{font-size:.74rem;color:var(--cyan);font-weight:800;letter-spacing:1px;text-transform:uppercase}
+.work-card h3{font-size:1.3rem;line-height:1.2;margin:14px 0 8px}
+.work-card p{color:var(--muted);font-size:.93rem;margin:0 0 16px}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.stack span{font-size:.72rem;font-weight:700;padding:4px 9px;border:1px solid var(--line);border-radius:20px;background:rgba(8,22,37,.9)}
+.work-card .go{margin-top:auto;font-weight:800;font-size:.9rem;color:var(--lime);border-bottom:2px solid currentColor}
+.work-card .go:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.work-card .soon{margin-top:auto;font-size:.8rem;font-weight:800;color:var(--muted)}
+
 /* Poster album */
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;perspective:1400px}
 .poster{display:block;padding:0;border:1px solid var(--line);border-radius:16px;background:#040b15;cursor:zoom-in;overflow:hidden;font:inherit;color:inherit;box-shadow:0 18px 40px rgba(0,0,0,.45)}
@@ -116,14 +130,14 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:.9rem;color:var
   .hero{grid-template-columns:1fr;padding-top:25px;gap:35px}
   .hero-art{min-height:400px}
   .chip.a{left:-30px}.chip.b{right:-24px}.chip.c{left:-20px}.sticker{right:-24px}
-  .skills,.gallery{grid-template-columns:1fr 1fr}
+  .skills,.gallery,.work{grid-template-columns:1fr 1fr}
   .projects,.about-grid{grid-template-columns:1fr}
   .section-head{display:block}.section-head p{margin-top:16px}
   .contact{padding:35px;display:block}.contact .btn{margin-top:24px}
 }
 @media(max-width:480px){
   section{padding:65px 0}
-  .skills{grid-template-columns:1fr}
+  .skills,.work{grid-template-columns:1fr}
   .gallery{gap:14px}
   .portrait{width:230px}
   .sticker{width:90px;height:90px;font-size:.62rem}
@@ -141,7 +155,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:.9rem;color:var
 <header id="home"><div class="container">
 <nav class="nav">
   <a class="logo" href="#home">Eric<span>.</span></a>
-  <div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Services</a><a href="#album">Posters</a><a href="#contact">Contact</a></div>
+  <div class="navlinks" id="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Services</a><a href="#work">Projects</a><a href="#album">Posters</a><a href="#contact">Contact</a></div>
   <button class="menu" aria-label="Toggle menu" aria-controls="navlinks" aria-expanded="false">☰</button>
 </nav>
 <div class="hero">
@@ -195,6 +209,24 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:.9rem;color:var
     <article class="project reveal" data-tilt data-tilt-max="8"><div class="pop"><h3>Laptop optimisation &amp; repairs</h3><p>Laptop speed optimisation, driver problems, storage and performance issues, system setup and general software support.</p><a href="#contact">Improve your device ↗</a></div></article>
     <article class="project reveal" data-tilt data-tilt-max="8"><div class="pop"><h3>Digital branding &amp; content</h3><p>Advertising posters, social media graphics, AI-assisted content ideas, YouTube and TikTok branding, and digital promotional materials.</p><a href="#contact">Create a design ↗</a></div></article>
     <article class="project reveal" data-tilt data-tilt-max="8"><div class="pop"><h3>Environmental &amp; data solutions</h3><p>GIS mapping, Excel data work, beginner Python support, environmental research ideas and technology-driven sustainability concepts.</p><a href="#contact">Discuss a solution ↗</a></div></article>
+  </div>
+</div></section>
+
+<section id="work"><div class="container">
+  <div class="section-head reveal"><h2>Projects I’ve<br>built.</h2><p>Websites, business systems and platforms for hotels, shops, schools and environmental work across Kenya.</p></div>
+  <div class="work">
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Environmental platform</div><h3>Cypher Green Systems</h3><p>Environmental project management, GIS, field monitoring, MRV and a carbon project marketplace, built around an interactive 3D Earth.</p><div class="stack"><span>Next.js</span><span>Supabase</span><span>MapLibre</span></div><a class="go" href="https://cypher-green-systems.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Retail system</div><h3>Frontpage Supermarket</h3><p>Customer website, online ordering, point of sale, inventory and management dashboards for a supermarket in Njoro, on one codebase.</p><div class="stack"><span>Next.js</span><span>Supabase</span><span>M-Pesa</span></div><a class="go" href="https://frontpage-supermarket.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Hotel website</div><h3>Viewpoint Inn Mbuinzau</h3><p>Hotel, restaurant and lounge website with online booking for rooms, tables and events, plus a staff dashboard.</p><div class="stack"><span>Node.js</span><span>Booking</span></div><a class="go" href="https://view-point-inn.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Education platform</div><h3>Learning Management System</h3><p>Course catalog, learner workspace, instructor course builder, assessments and grading, verifiable certificates and an admin console.</p><div class="stack"><span>Next.js</span><span>PostgreSQL</span><span>Drizzle</span></div><a class="go" href="https://github.com/Cypher-techy/learning-management-system" target="_blank" rel="noopener">View code ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Hotel operations</div><h3>King’ang’i Hotel System</h3><p>Hotel website with a digital menu and ordering for two branches, and an operations desk for orders, kitchen, stock, expenses and staff.</p><div class="stack"><span>Next.js</span><span>PostgreSQL</span><span>Drizzle</span></div><a class="go" href="https://github.com/Cypher-techy/kingang-i-hotel-system" target="_blank" rel="noopener">View code ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Trading education</div><h3>CypherFX</h3><p>A site that helps traders learn, analyse and grow with a private TradingView indicator and a disciplined trading framework.</p><a class="go" href="https://cypher-fx.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Studio website</div><h3>Forge Eleven</h3><p>Website for a web design and development studio in Kenya that builds websites, web applications, online stores and business systems.</p><a class="go" href="https://forge-eleven.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Venue website</div><h3>Space Next Door Nakuru</h3><p>Sports bar, grill and nightlife venue site with live sports, food, drinks and events, and reservations on WhatsApp.</p><a class="go" href="https://space-next-door.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Online store</div><h3>Lion Legacy Fitness</h3><p>Store for fitness supplements and gym equipment in Kenya, with ordering online or on WhatsApp.</p><a class="go" href="https://lion-legacy-fitness.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Property management</div><h3>Arena Homes</h3><p>Management system with separate staff and tenant portals for Arena Homes.</p><a class="go" href="https://arena-homes.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Business platform</div><h3>Sensei Digital</h3><p>Website and staff dashboard for a cyber cafe: services, computer training, web development, T-shirt printing and enquiry tracking.</p><div class="stack"><span>Next.js</span><span>Supabase</span></div><span class="soon">In development</span></div></article>
+    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Booking platform</div><h3>SummerTime Grooming &amp; Beauty Hub</h3><p>Grooming and beauty website with services, bookings, payments and customer reviews.</p><div class="stack"><span>Next.js</span><span>PostgreSQL</span></div><span class="soon">In development</span></div></article>
   </div>
 </div></section>
 
