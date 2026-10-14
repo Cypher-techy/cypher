@@ -84,15 +84,20 @@ section{padding:95px 0}
 .project:before{content:"↗";position:absolute;right:25px;bottom:15px;font-size:5rem;line-height:1;opacity:.12}
 
 /* Project showcase */
-.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.work-card{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.work-card:first-child{grid-column:1/-1;flex-direction:row;align-items:stretch}
+.work-card:first-child .shot{flex:0 0 62%;border-bottom:0;border-right:1px solid var(--line)}
+.work-card:first-child .shot img{height:100%;border-radius:17px 0 0 17px}
+.work-card:first-child .pop{justify-content:center;padding:32px}
+.work-card:first-child h3{font-size:1.8rem;letter-spacing:-1px}
+.work-card:first-child .go{margin-top:8px}
+.work-card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:18px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.work-card .shot{display:block;border-bottom:1px solid var(--line)}
+.work-card .shot img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:17px 17px 0 0;background:#040b15}
 .work-card:hover{border-color:var(--cyan);box-shadow:0 24px 50px rgba(0,0,0,.45),0 0 30px rgba(69,217,255,.14)}
-.work-card .pop{display:flex;flex-direction:column;align-items:flex-start;flex:1}
-.work-card .kind{font-size:.74rem;color:var(--cyan);font-weight:800;letter-spacing:1px;text-transform:uppercase}
-.work-card h3{font-size:1.3rem;line-height:1.2;margin:14px 0 8px}
+.work-card .pop{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:20px 24px 24px}
+.work-card h3{font-size:1.3rem;line-height:1.2;margin:0 0 8px}
 .work-card p{color:var(--muted);font-size:.93rem;margin:0 0 16px}
-.stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
-.stack span{font-size:.72rem;font-weight:700;padding:4px 9px;border:1px solid var(--line);border-radius:20px;background:rgba(8,22,37,.9)}
 .work-card .go{margin-top:auto;font-weight:800;font-size:.9rem;color:var(--lime);border-bottom:2px solid currentColor}
 .work-card .go:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
 .work-card .soon{margin-top:auto;font-size:.8rem;font-weight:800;color:var(--muted)}
@@ -130,14 +135,20 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:.9rem;color:var
   .hero{grid-template-columns:1fr;padding-top:25px;gap:35px}
   .hero-art{min-height:400px}
   .chip.a{left:-30px}.chip.b{right:-24px}.chip.c{left:-20px}.sticker{right:-24px}
-  .skills,.gallery,.work{grid-template-columns:1fr 1fr}
+  .skills,.gallery{grid-template-columns:1fr 1fr}
+  .work{grid-template-columns:1fr}
+  .work-card:first-child{flex-direction:column}
+  .work-card:first-child .shot{flex:none;border-right:0;border-bottom:1px solid var(--line)}
+  .work-card:first-child .shot img{height:auto;border-radius:17px 17px 0 0}
+  .work-card:first-child .pop{padding:20px 24px 24px}
+  .work-card:first-child h3{font-size:1.3rem;letter-spacing:0}
   .projects,.about-grid{grid-template-columns:1fr}
   .section-head{display:block}.section-head p{margin-top:16px}
   .contact{padding:35px;display:block}.contact .btn{margin-top:24px}
 }
 @media(max-width:480px){
   section{padding:65px 0}
-  .skills,.work{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr}
   .gallery{gap:14px}
   .portrait{width:230px}
   .sticker{width:90px;height:90px;font-size:.62rem}
@@ -215,14 +226,13 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:.9rem;color:var
 <section id="work"><div class="container">
   <div class="section-head reveal"><h2>Projects I’ve<br>built.</h2><p>Websites, business systems and platforms for hotels, shops, schools and environmental work across Kenya.</p></div>
   <div class="work">
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Environmental platform</div><h3>Cypher Green Systems</h3><p>Environmental project management, GIS, field monitoring, MRV and a carbon project marketplace, built around an interactive 3D Earth.</p><div class="stack"><span>Next.js</span><span>Supabase</span><span>MapLibre</span></div><a class="go" href="https://cypher-green-systems.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Retail system</div><h3>Frontpage Supermarket</h3><p>Customer website, online ordering, point of sale, inventory and management dashboards for a supermarket in Njoro, on one codebase.</p><div class="stack"><span>Next.js</span><span>Supabase</span><span>M-Pesa</span></div><a class="go" href="https://frontpage-supermarket-cyphertic.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Hotel website</div><h3>Viewpoint Inn Mbuinzau</h3><p>Hotel, restaurant and lounge website with online booking for rooms, tables and events, plus a staff dashboard.</p><div class="stack"><span>Node.js</span><span>Booking</span></div><a class="go" href="https://view-point-inn.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Education platform</div><h3>Learning Management System</h3><p>Course catalog, learner workspace, instructor course builder, assessments and grading, verifiable certificates and an admin console.</p><div class="stack"><span>Next.js</span><span>PostgreSQL</span><span>Drizzle</span></div><a class="go" href="https://github.com/Cypher-techy/learning-management-system" target="_blank" rel="noopener">View code ↗</a></div></article>
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Hotel operations</div><h3>King’ang’i Hotel System</h3><p>Hotel website with a digital menu and ordering for two branches, and an operations desk for orders, kitchen, stock, expenses and staff.</p><div class="stack"><span>Next.js</span><span>PostgreSQL</span><span>Drizzle</span></div><a class="go" href="https://kingangi-hotel-system-hotel-system-cypher-techy.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Trading education</div><h3>CypherFX</h3><p>A site that helps traders learn, analyse and grow with a private TradingView indicator and a disciplined trading framework.</p><a class="go" href="https://cypher-fx.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Business platform</div><h3>Sensei Digital</h3><p>Website and staff dashboard for a cyber cafe: services, computer training, web development, T-shirt printing and enquiry tracking.</p><div class="stack"><span>Next.js</span><span>Supabase</span></div><a class="go" href="https://sensei-brand-and-portfolio.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
-    <article class="work-card reveal" data-tilt><div class="pop"><div class="kind">Booking platform</div><h3>SummerTime Grooming &amp; Beauty Hub</h3><p>Grooming and beauty website with services, bookings, payments and customer reviews.</p><div class="stack"><span>Next.js</span><span>PostgreSQL</span></div><a class="go" href="https://summertime-grooming-beauty-hub.vercel.app" target="_blank" rel="noopener">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt data-tilt-max="6"><a class="shot" href="https://cypher-green-systems.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="projects/cypher-green-systems.jpg" alt="" width="960" height="600" loading="lazy"></a><div class="pop"><h3>Cypher Green Systems</h3><p>Environmental project management, GIS, field monitoring, MRV and a carbon project marketplace, built around an interactive 3D Earth.</p><a class="go" href="https://cypher-green-systems.vercel.app" target="_blank" rel="noopener" aria-label="Visit the Cypher Green Systems live site">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt data-tilt-max="6"><a class="shot" href="https://frontpage-supermarket-cyphertic.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="projects/frontpage-supermarket.jpg" alt="" width="960" height="600" loading="lazy"></a><div class="pop"><h3>Frontpage Supermarket</h3><p>Customer website, online ordering, point of sale, inventory and management dashboards for a supermarket in Njoro, on one codebase.</p><a class="go" href="https://frontpage-supermarket-cyphertic.vercel.app" target="_blank" rel="noopener" aria-label="Visit the Frontpage Supermarket live site">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt data-tilt-max="6"><a class="shot" href="https://view-point-inn.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="projects/viewpoint-inn.jpg" alt="" width="960" height="600" loading="lazy"></a><div class="pop"><h3>Viewpoint Inn Mbuinzau</h3><p>Hotel, restaurant and lounge website with online booking for rooms, tables and events, plus a staff dashboard.</p><a class="go" href="https://view-point-inn.vercel.app" target="_blank" rel="noopener" aria-label="Visit the Viewpoint Inn Mbuinzau live site">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt data-tilt-max="6"><a class="shot" href="https://kingangi-hotel-system-hotel-system-cypher-techy.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="projects/kingangi-hotel.jpg" alt="" width="960" height="600" loading="lazy"></a><div class="pop"><h3>King’ang’i Hotel System</h3><p>Hotel website with a digital menu and ordering for two branches, and an operations desk for orders, kitchen, stock, expenses and staff.</p><a class="go" href="https://kingangi-hotel-system-hotel-system-cypher-techy.vercel.app" target="_blank" rel="noopener" aria-label="Visit the King’ang’i Hotel System live site">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt data-tilt-max="6"><a class="shot" href="https://cypher-fx.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="projects/cypherfx.jpg" alt="" width="960" height="600" loading="lazy"></a><div class="pop"><h3>CypherFX</h3><p>A site that helps traders learn, analyse and grow with a private TradingView indicator and a disciplined trading framework.</p><a class="go" href="https://cypher-fx.vercel.app" target="_blank" rel="noopener" aria-label="Visit the CypherFX live site">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt data-tilt-max="6"><a class="shot" href="https://sensei-brand-and-portfolio.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="projects/sensei-digital.jpg" alt="" width="960" height="600" loading="lazy"></a><div class="pop"><h3>Sensei Digital</h3><p>Website and staff dashboard for a cyber cafe: services, computer training, web development, T-shirt printing and enquiry tracking.</p><a class="go" href="https://sensei-brand-and-portfolio.vercel.app" target="_blank" rel="noopener" aria-label="Visit the Sensei Digital live site">Visit live site ↗</a></div></article>
+    <article class="work-card reveal" data-tilt data-tilt-max="6"><a class="shot" href="https://summertime-grooming-beauty-hub.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="projects/summertime.jpg" alt="" width="960" height="600" loading="lazy"></a><div class="pop"><h3>SummerTime Grooming &amp; Beauty Hub</h3><p>Grooming and beauty website with services, bookings, payments and customer reviews.</p><a class="go" href="https://summertime-grooming-beauty-hub.vercel.app" target="_blank" rel="noopener" aria-label="Visit the SummerTime Grooming &amp; Beauty Hub live site">Visit live site ↗</a></div></article>
   </div>
 </div></section>
 
